@@ -8,17 +8,23 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-    var p1=Math.random()
+    var a1=Math.floor((Math.random())*100)
 
-    var p2=Math.floor(Math.random()*100)
+    var a2=Math.floor((Math.random())*100)
 
-    var p3=Math.floor(Math.random()*100)
+    var a3=Math.random()
 
-    var pow=Math.pow(p1)
+    var a4=Math.floor((Math.random())*100)
 
-    var atanh=Math.atanh(p2)
+    var pow=Math.pow(a1)
 
-    var cbrt=Math.cbrt(p3)
+    var sign=Math.sign(a2)
+
+    var tanh=Math.tanh(a3)
+
+    var trunc=Math.trunc(a4)
+
+
 
     res.render('computation',
 
@@ -26,19 +32,24 @@ router.get('/', function(req, res, next) {
 
         title:'Pravallika Mummadi Computes Functions',
 
-        p1:p1,
+        a1:a1,
 
-        p2:p2,
+        a2:a2,
 
-        p3:p3,
+        a3:a3,
 
-        p:pow,
+        a4:a4,
+
+        f:pow,
         
-        q:atanh,
+        r:sign,
 
-        r:cbrt,
+        t:tanh,
 
-       
+        s:trunc,
+
+
+
     });
 
      
