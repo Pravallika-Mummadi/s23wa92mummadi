@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 
     
 
-    var atan=Math.atan2()(p1)
+    var atan=Math.atan2(p1)
 
     var atanh=Math.atanh(p2)
 
