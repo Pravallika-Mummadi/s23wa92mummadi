@@ -14,8 +14,6 @@ router.get('/', function(req, res, next) {
 
     var p3=Math.floor(Math.random())
 
-    
-
     var atan=Math.atan2(p1)
 
     var atanh=Math.atanh(p2)
@@ -34,8 +32,6 @@ router.get('/', function(req, res, next) {
 
         p3:p3,
 
-        
-
         p:atan,
         
         q:atanh,
@@ -43,9 +39,6 @@ router.get('/', function(req, res, next) {
         r:cbrt,
 
        
-
-
-
     });
 
      
