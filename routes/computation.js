@@ -12,13 +12,17 @@ router.get('/', function(req, res, next) {
 
     var p2=Math.floor((Math.random()))
 
-    var p3=Math.floor(Math.random())
+    var p3=Math.random()
 
-    var atan=Math.atan2(p1)
+
+    var atan=Math.atan(p1)
 
     var atanh=Math.atanh(p2)
 
     var cbrt=Math.cbrt(p3)
+
+
+
 
     res.render('computation',
 
@@ -38,7 +42,9 @@ router.get('/', function(req, res, next) {
 
         r:cbrt,
 
-       
+
+
+
     });
 
      
