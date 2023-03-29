@@ -8,21 +8,14 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-    var a1=Math.floor((Math.random())*100)
 
-    var a2=Math.floor((Math.random())*100)
+    var p1=Math.random();
 
-    var a3=Math.random()
+    var p2=Math.floor((Math.random())*100);
 
-    var a4=Math.floor((Math.random())*100)
+    var tanh=Math.tanh(p1)
 
-    var pow=Math.pow(a1)
-
-    var sign=Math.sign(a2)
-
-    var tanh=Math.tanh(a3)
-
-    var trunc=Math.trunc(a4)
+    var trunc=Math.trunc(p2)
 
 
 
@@ -32,17 +25,10 @@ router.get('/', function(req, res, next) {
 
         title:'Pravallika Mummadi Computes Functions',
 
-        a1:a1,
 
-        a2:a2,
+        p1:p1,
 
-        a3:a3,
-
-        a4:a4,
-
-        f:pow,
-        
-        r:sign,
+        p2:p2,
 
         t:tanh,
 
