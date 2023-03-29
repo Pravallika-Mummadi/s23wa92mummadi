@@ -8,9 +8,9 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-    var p1=Math.floor(Math.random())
+    var p1=Math.floor(Math.random()*100)
 
-    var p2=Math.floor(Math.random())
+    var p2=Math.floor(Math.random()*100)
 
     var p3=Math.floor(Math.random()*100)
 
