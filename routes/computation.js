@@ -8,13 +8,13 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-    var p1=Math.floor(Math.random()*100)
+    var p1=Math.random()
 
     var p2=Math.floor(Math.random()*100)
 
     var p3=Math.floor(Math.random()*100)
 
-    var atan=Math.pow(p1)
+    var pow=Math.pow(p1)
 
     var atanh=Math.atanh(p2)
 
